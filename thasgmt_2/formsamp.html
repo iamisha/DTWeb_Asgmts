@@ -60,6 +60,19 @@
             border-radius: 20px;
             margin-top: -24px;
         }
+        
+        button a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        
+        a:hover {
+            color: grey;
+        }
+        
+        #btn:hover {
+            color: grey;
+        }
     </style>
 </head>
 
@@ -68,15 +81,15 @@
         <h1>Login</h1>
         <hr align="left">
 
-        <input type="text" placeholder=""><br><br>
-        <input type="password" placeholder=""><br><br>
+        <input type="text" placeholder="" required=""><br><br>
+        <input type="password" placeholder="" required=""><br><br>
 
-        <button class="button redbtn">Continue</button><br><br>
+        <input type="submit" class="button redbtn" value="Continue" id="btn"><br><br>
         <label><center> or connect with social media</center></label><br>
 
-        <button class="button lightbluebtn"><i class="fa-brands fa-twitter"></i> Sign in with twitter</button><br><br>
-
-        <button class="button darkblue"><i class="fa-brands fa-facebook-f"></i> Sign in with facebook</button>
+        <button class="button lightbluebtn"><i class="fa-brands fa-twitter">&nbsp;</i><a href="https://www.twitter.com">Sign in with twitter</a></button><br><br>
+        <!--without using fontawesome, to make icon, we can use <a><img src="" alt="" style="border-radious: 50%; height: 20px; width: 20px;">sign in with facebook/twitter</a>-->
+        <button class="button darkblue"><i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com"> Sign in with facebook</a></i></button>
     </div>
 </body>
 
